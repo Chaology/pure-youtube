@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PureTube</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script  src="js/script.js"></script>
+	<script  src="js/jquery.fancybox.pack.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fancybox").fancybox();
+		});
+	</script>
+	
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<a href="."><h1>Pure<span>Tube</span></h1></a>
+			<p>Search Youtube videos without distraction</p>
+		</header>
+		<section>
+			<form method = "get" id="search-form" name="search-form">
+				<div class="fieldcontainer">
+					<input type="search" name = "query" id="query" class="search-field" placeholder="Search Youtube...">
+					<input type="submit" id="search-btn" value="">
+				</div>
+			</form>
+
+			<ul id="results"></ul>
+
+			<div id="buttons"></div>
+
+		</section>
+		<footer>
+			<p>Copyright &copy; 2017, All Rights Reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
